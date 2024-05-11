@@ -1,0 +1,23 @@
+$header-height: 3.5rem;
+
+/*========== Colors ==========*/
+/*Color mode HSL(hue, saturation, lightness)*/
+$whitecolor: hsl(0, 0%, 100%);
+$blackcolor: hsl(0, 0%, 0%);
+
+/*========== Font and typography ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+$bodyfont: "Montserrat Alternates", sans-serif;
+$biggestfontsize: 2rem;
+$bigfontsize: 1.5rem;
+$h3fontsize: 1rem;
+$normalfontsize: 0.938rem;
+
+/*========== Font weight ==========*/
+$fontregular: 400;
+$fontsemibold: 600;
+$fontbold: 700;
+
+/*========== z index ==========*/
+$ztooltip: 10;
+$zfixed: 100;

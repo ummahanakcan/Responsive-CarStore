@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>CarStore</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">CarStore</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#" class="nav__link">Project</a></li>
+            <li><a href="#" class="nav__link">Store</a></li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+            <li><a href="#" class="nav__link btnLogin">Login</a></li>
+          </ul>
+          <!-- Close Button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main container">
+      <section class="car">
+        <div class="car__swiper swiper">
+          <div class="swiper-wrapper">
+            <article class="car__article swiper-slide">
+              <div class="car__data container">
+                <h3 class="car__subtitle" data-swiper-parallax="500">BMW</h3>
+                <h1 class="home__title" data-swiper-parallax="400">
+                  Luxury Style <br />
+                  Modern Car
+                </h1>
+                <a href="#" class="car__button" data-swiper-parallax="300">
+                  More Detail <i class="ri-arrow-right-s-fill"></i>
+                </a>
+              </div>
+              <img
+                src="./images/1.jpg"
+                alt="image"
+                class="car__img"
+                data-swiper-parallax="-300"
+              />
+              <div class="car__shadow"></div>
+            </article>
+
+            <article class="car__article swiper-slide">
+              <div class="car__data container">
+                <h3 class="car__subtitle" data-swiper-parallax="500">BMW</h3>
+                <h1 class="home__title" data-swiper-parallax="400">
+                  Comfortable Style <br />
+                  Sport Car
+                </h1>
+                <a href="#" class="car__button" data-swiper-parallax="300">
+                  More Detail <i class="ri-arrow-right-s-fill"></i>
+                </a>
+              </div>
+              <img
+                src="./images/2.jpg"
+                alt="image"
+                class="car__img"
+                data-swiper-parallax="-300"
+              />
+              <div class="car__shadow"></div>
+            </article>
+
+            <article class="car__article swiper-slide">
+              <div class="car__data container">
+                <h3 class="car__subtitle" data-swiper-parallax="500">BMW</h3>
+                <h1 class="home__title" data-swiper-parallax="400">
+                  Relax Style <br />
+                  Big Car
+                </h1>
+                <a href="#" class="car__button" data-swiper-parallax="300">
+                  More Detail <i class="ri-arrow-right-s-fill"></i>
+                </a>
+              </div>
+              <img
+                src="./images/3.jpg"
+                alt="image"
+                class="car__img"
+                data-swiper-parallax="-300"
+              />
+              <div class="car__shadow"></div>
+            </article>
+
+            <article class="car__article swiper-slide">
+              <div class="car__data container">
+                <h3 class="car__subtitle" data-swiper-parallax="500">BMW</h3>
+                <h1 class="home__title" data-swiper-parallax="400">
+                  Flexible Style <br />
+                  Color Car
+                </h1>
+                <a href="#" class="car__button" data-swiper-parallax="300">
+                  More Detail <i class="ri-arrow-right-s-fill"></i>
+                </a>
+              </div>
+              <img
+                src="./images/4.jpg"
+                alt="image"
+                class="car__img"
+                data-swiper-parallax="-300"
+              />
+              <div class="car__shadow"></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="car__content">
+          <div class="car__social">
+            <a href="#" class="car__social-link">
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+            <a href="#" class="car__social-link">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="#" class="car__social-link">
+              <i class="ri-twitter-fill"></i>
+            </a>
+          </div>
+          <!-- pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- navigation button-->
+          <div class="swipper-navigation">
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="wrapper1">
+      <div class="wrapper">
+        <span class="icon-close">
+          <i class="ri-close-large-line"></i>
+        </span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><i class="ri-mail-fill"></i></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="ri-lock-password-fill"></i></span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label> <input type="checkbox" />Remember me</label>
+              <a href="#">Forget Password</a>
+            </div>
+            <button type="submit" class="btn1">Login</button>
+            <div class="login-register">
+              <p>
+                Dont have an account?
+                <a href="#" class="register-link">Register</a>
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="form-box register">
+          <h2>Registiration</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><i class="ri-user-fill"></i></span>
+              <input type="text" required />
+              <label>Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="ri-mail-fill"></i></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="ri-lock-password-fill"></i></span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label>
+                <input type="checkbox" />I agree to the terms &
+                conditions</label
+              >
+            </div>
+            <button type="submit" class="btn1">Register</button>
+            <div class="login-register">
+              <p>
+                Already have an account?
+                <a href="#" class="login-link">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

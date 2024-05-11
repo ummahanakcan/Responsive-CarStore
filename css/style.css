@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap");
+/*========== Colors ==========*/
+/*Color mode HSL(hue, saturation, lightness)*/
+/*========== Font and typography ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+/*========== Font weight ==========*/
+/*========== z index ==========*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 0.938rem;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+}
+header .container {
+  margin-inline: 8.5rem;
+}
+header .nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+}
+header .nav .nav__logo {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 600;
+}
+header .nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+header .nav .nav__list .nav__link {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  transition: all 0.4s;
+}
+header .nav .nav__list .nav__link:hover {
+  text-decoration: underline;
+  font-size: 16px;
+}
+header .nav .nav__close {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+header .nav .nav__toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+main {
+  overflow: hidden;
+}
+main .container {
+  margin-inline: 8.5rem;
+}
+main .swipper {
+  height: 100%;
+}
+main .car__swiper {
+  position: relative;
+  z-index: 10;
+}
+main .car__swiper .car__article {
+  position: relative;
+  padding-top: 13rem;
+  width: 100%;
+  height: 100vh;
+}
+main .car__swiper .car__article .car__img,
+main .car__swiper .car__article .car__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+main .car__swiper .car__article .car__img {
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+main .car__swiper .car__article .car__data {
+  text-align: initial;
+  padding-left: initial;
+}
+main .car__swiper .car__article .car__data .car__subtitle {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+main .car__swiper .car__article .car__data .home__title {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+main .car__swiper .car__article .car__data .car__button {
+  color: hsl(0, 0%, 100%);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-weight: 600;
+}
+main .car__swiper .car__article .car__data .car__button i {
+  font-size: 2rem;
+  font-weight: initial;
+  transition: transform 0.4s;
+}
+main .car__swiper .car__article .car__data .car__button:hover i {
+  transform: translateX(0.5rem);
+}
+main .car__swiper .car__article .car__shadow {
+  background-color: hsla(0, 0%, 0%, 0.05);
+  z-index: -1;
+}
+main .car__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+main .car__content .car__social {
+  position: absolute;
+  z-index: 10;
+  left: 1.5rem;
+  bottom: 4rem;
+  display: grid;
+  row-gap: 1.5rem;
+  margin-inline: 8.5rem;
+}
+main .car__content .car__social .car__social-link {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+}
+main .car__content .car__social .car__social-link:hover {
+  font-size: 1.8rem;
+}
+main .car__content .swiper-pagination {
+  width: initial;
+  height: max-content;
+  top: 6rem;
+  left: initial;
+  right: 8.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  column-gap: 0.25rem;
+  align-items: center;
+}
+main .car__content .swiper-pagination .swiper-pagination-current {
+  font-size: 1.5rem;
+}
+main .car__content .swipper-navigation {
+  position: absolute;
+  z-index: 10;
+  height: max-content;
+  bottom: 4rem;
+  right: 1.5rem;
+  display: flex;
+  column-gap: 2.5rem;
+}
+main .car__content .swipper-navigation .swiper-button-prev::after,
+main .car__content .swipper-navigation .swiper-button-next::after {
+  content: "";
+}
+main .car__content .swipper-navigation .swiper-button-prev,
+main .car__content .swipper-navigation .swiper-button-next {
+  font-size: 3rem;
+  color: hsl(0, 0%, 100%);
+  width: initial;
+  height: initial;
+  position: initial;
+  outline: none;
+  border: none;
+  transition: all 0.4s;
+}
+main .car__content .swipper-navigation .swiper-button-prev:hover,
+main .car__content .swipper-navigation .swiper-button-next:hover {
+  font-size: 2.2rem;
+  border: 0px solid #403d39;
+  background-color: #403d39;
+  border-radius: 0.5rem;
+}
+
+.wrapper1 {
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wrapper {
+  position: relative;
+  width: 25rem;
+  min-height: 26rem;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scale(0);
+  transition: height 0.2s ease;
+}
+.wrapper.active-popup {
+  transform: scale(1);
+}
+.wrapper.active {
+  height: 32rem;
+}
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(-25rem);
+}
+.wrapper.active .form-box.register {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+.wrapper .form-box.login {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+  position: absolute;
+}
+.wrapper .form-box.register {
+  position: absolute;
+  transition: none;
+  transform: translateX(25rem);
+}
+.wrapper .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  background-color: hsl(0, 0%, 0%);
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 1.2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.wrapper .form-box {
+  width: 100%;
+  padding: 2.5rem;
+}
+.wrapper .form-box h2 {
+  font-size: 1rem;
+  color: hsl(0, 0%, 0%);
+  text-align: center;
+}
+.wrapper .form-box .input-box {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  border-bottom: 2px solid hsl(0, 0%, 0%);
+  margin: 30px 0;
+}
+.wrapper .form-box .input-box label {
+  position: absolute;
+  top: 50%;
+  left: 0.25rem;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 100%);
+  pointer-events: none;
+  transition: 0.5s;
+}
+.wrapper .form-box .input-box input:focus ~ label,
+.wrapper .form-box .input-box input:valid ~ label {
+  top: -0.25rem;
+}
+.wrapper .form-box .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+.wrapper .form-box .input-box .icon {
+  position: absolute;
+  right: 8px;
+  line-height: 57px;
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8rem;
+}
+.wrapper .form-box .remember-forgot {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  color: hsl(0, 0%, 0%);
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .form-box .remember-forgot label input {
+  accent-color: hsl(0, 0%, 0%);
+  margin-right: 3px;
+}
+.wrapper .form-box .remember-forgot a {
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+}
+.wrapper .form-box .remember-forgot a:hover {
+  text-decoration: underline;
+}
+.wrapper .form-box .btn1 {
+  width: 100%;
+  height: 45px;
+  background: hsl(0, 0%, 0%);
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: 500;
+}
+.wrapper .form-box .login-register {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+  color: hsl(0, 0%, 0%);
+}
+.wrapper .form-box .login-register p a {
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  font-weight: 600;
+}
+.wrapper .form-box .login-register p a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1150px) {
+  header .container {
+    margin-inline: 3.5rem;
+  }
+  header .nav .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    width: 80%;
+    height: 100%;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 6rem 3rem 0;
+    transition: right 0.4s;
+  }
+  header .nav .nav__menu .nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+  header .nav .nav__menu .nav__list .nav__link {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    transition: all 0.4s;
+  }
+  header .nav .nav__menu .nav__list .nav__link:hover {
+    font-size: 20px;
+  }
+  header .nav .nav__menu .nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 3.5rem;
+    display: block;
+  }
+  header .nav .nav__toggle {
+    display: block;
+  }
+  header .nav .show__menu {
+    right: 0;
+  }
+  main .car__content .swiper-pagination {
+    right: 4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .nav .nav__menu {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
